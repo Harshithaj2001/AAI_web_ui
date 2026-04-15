@@ -1,0 +1,12 @@
+.iconChip {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--aa-gold-200), var(--aa-gold-100));
+  color: var(--aa-gold-900);
+  border: 1px solid rgba(184, 141, 34, 0.18);
+  flex-shrink: 0;
+}

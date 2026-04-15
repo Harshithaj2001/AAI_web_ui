@@ -1,0 +1,35 @@
+import type { TimesheetRow, DayType, DailyEntriesMap } from "@/lib/timesheets";
+import type { EmployeeProfile, EmployeeNotification } from "@/lib/portal";
+
+export type EmployeePortalOutletContext = {
+  user: { name: string; email: string } | null;
+  authEmail: string;
+  profile: EmployeeProfile | null;
+  profileName: string;
+  profilePhone: string;
+  setProfileName: (v: string) => void;
+  setProfilePhone: (v: string) => void;
+  busy: boolean;
+  onSaveProfile: () => Promise<void>;
+  weekAnchor: Date;
+  setWeekAnchor: (d: Date) => void;
+  weekStartStr: string;
+  dates: string[];
+  nyToday: string;
+  daily: DailyEntriesMap;
+  setDay: (dateKey: string, patch: Partial<{ type: DayType; hours: number }>) => void;
+  entryNotes: string;
+  setEntryNotes: (v: string) => void;
+  maxHours: number;
+  currentRow: TimesheetRow | null;
+  status: string;
+  readOnly: boolean;
+  legacyWeek: boolean;
+  workWeekTotal: number;
+  onSaveDraft: () => Promise<void>;
+  onSubmitWeek: () => Promise<void>;
+  rows: TimesheetRow[] | null;
+  notifications: EmployeeNotification[] | null;
+  openNotification: (n: EmployeeNotification) => Promise<void>;
+  unreadCount: number;
+};

@@ -1,0 +1,29 @@
+.field {
+  display: grid;
+  gap: var(--aa-space-2);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--aa-neutral-700);
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid var(--aa-neutral-300);
+  background: var(--aa-white);
+  color: var(--aa-neutral-900);
+  border-radius: 14px;
+  padding: 14px 16px;
+  font: inherit;
+  outline: none;
+  transition: 0.2s ease;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: var(--aa-blue-600);
+  box-shadow: 0 0 0 4px rgba(53, 88, 216, 0.12);
+}

@@ -1,0 +1,108 @@
+/*
+ * Design Tokens — Single source of truth for the AA Innovations design system.
+ * Light theme is the default; dark-theme tokens override via [data-theme="dark"].
+ */
+
+:root {
+  /* ─── Brand: Persian Blue ─── */
+  --aa-blue-900: #0E1A4F;
+  --aa-blue-800: #142872;
+  --aa-blue-700: #1C39BB;
+  --aa-blue-600: #3558D8;
+  --aa-blue-500: #5F7BE6;
+  --aa-blue-300: #BCC7F7;
+  --aa-blue-200: #DDE4FC;
+  --aa-blue-100: #F3F6FF;
+
+  /* ─── Brand: Soft Warm Gold ─── */
+  --aa-gold-900: #8D6A10;
+  --aa-gold-800: #B88D22;
+  --aa-gold-700: #D6A935;
+  --aa-gold-600: #E8BD49;
+  --aa-gold-500: #F9CC5C;
+  --aa-gold-300: #FDE7A7;
+  --aa-gold-200: #FEF1CA;
+  --aa-gold-100: #FFF9E8;
+
+  /* ─── Neutrals ─── */
+  --aa-neutral-950: #0B1020;
+  --aa-neutral-900: #111827;
+  --aa-neutral-800: #1F2937;
+  --aa-neutral-700: #374151;
+  --aa-neutral-600: #4B5563;
+  --aa-neutral-500: #6B7280;
+  --aa-neutral-400: #9CA3AF;
+  --aa-neutral-300: #D1D5DB;
+  --aa-neutral-200: #E5E7EB;
+  --aa-neutral-100: #F3F4F6;
+  --aa-neutral-50:  #F9FAFB;
+  --aa-white:       #FFFFFF;
+
+  /* ─── Semantic ─── */
+  --aa-success:    #15803D;
+  --aa-success-bg: #DCFCE7;
+  --aa-warning:    #B45309;
+  --aa-warning-bg: #FEF3C7;
+  --aa-error:      #B91C1C;
+  --aa-error-bg:   #FEE2E2;
+  --aa-info:       #1D4ED8;
+  --aa-info-bg:    #DBEAFE;
+
+  /* ─── Typography ─── */
+  --aa-font-heading: 'Poppins', sans-serif;
+  --aa-font-body:    'Inter', sans-serif;
+  --aa-fs-xs:   12px;
+  --aa-fs-sm:   13px;
+  --aa-fs-base: 15px;
+  --aa-fs-md:   18px;
+  --aa-fs-lg:   24px;
+  --aa-fs-xl:   28px;
+  --aa-fs-2xl:  30px;
+
+  /* ─── Spacing ─── */
+  --aa-space-1:  4px;
+  --aa-space-2:  8px;
+  --aa-space-3:  12px;
+  --aa-space-4:  16px;
+  --aa-space-5:  20px;
+  --aa-space-6:  24px;
+  --aa-space-7:  28px;
+  --aa-space-8:  32px;
+  --aa-space-10: 40px;
+  --aa-space-14: 56px;
+
+  /* ─── Radii ─── */
+  --aa-radius-sm:   8px;
+  --aa-radius-md:   12px;
+  --aa-radius-lg:   18px;
+  --aa-radius-xl:   24px;
+  --aa-radius-2xl:  30px;
+  --aa-radius-full: 999px;
+
+  /* ─── Shadows ─── */
+  --aa-shadow-sm: 0 10px 24px rgba(17, 24, 39, 0.08);
+  --aa-shadow-md: 0 18px 40px rgba(17, 24, 39, 0.12);
+  --aa-shadow-lg: 0 24px 56px rgba(14, 26, 79, 0.18);
+
+  /* ─── Surfaces (themeable) ─── */
+  --aa-surface-primary:   var(--aa-white);
+  --aa-surface-secondary: var(--aa-neutral-50);
+  --aa-surface-elevated:  rgba(255, 255, 255, 0.88);
+  --aa-text-primary:      var(--aa-neutral-900);
+  --aa-text-secondary:    var(--aa-neutral-600);
+  --aa-text-muted:        var(--aa-neutral-500);
+  --aa-border-default:    var(--aa-neutral-200);
+  --aa-bg-body: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+}
+
+/* ─── Dark Theme Override (ready for activation) ─── */
+[data-theme='dark'] {
+  --aa-surface-primary:   var(--aa-neutral-900);
+  --aa-surface-secondary: var(--aa-neutral-800);
+  --aa-surface-elevated:  rgba(31, 41, 55, 0.92);
+  --aa-text-primary:      var(--aa-neutral-100);
+  --aa-text-secondary:    var(--aa-neutral-400);
+  --aa-text-muted:        var(--aa-neutral-500);
+  --aa-border-default:    var(--aa-neutral-700);
+  --aa-bg-body: linear-gradient(180deg, #0B1020 0%, #111827 100%);
+}

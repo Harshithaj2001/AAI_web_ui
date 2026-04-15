@@ -1,0 +1,14 @@
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--aa-space-2) var(--aa-space-3);
+  border-radius: var(--aa-radius-full);
+  font-size: var(--aa-fs-xs);
+  font-weight: 700;
+  background: var(--aa-gold-100);
+  color: var(--aa-gold-900);
+  border: 1px solid rgba(184, 141, 34, 0.16);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

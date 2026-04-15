@@ -1,0 +1,174 @@
+.dashboardShell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+  min-height: 520px;
+}
+
+.sidebar {
+  padding: 20px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, var(--aa-blue-900), #12276c);
+  color: white;
+  box-shadow: var(--aa-shadow-lg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 800;
+}
+
+.brandMark {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: var(--aa-white);
+  background: linear-gradient(135deg, var(--aa-blue-700), var(--aa-blue-900));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 10px 20px rgba(28, 57, 187, 0.2);
+  font-family: var(--aa-font-heading);
+}
+
+.brandName {
+  font-family: var(--aa-font-heading);
+  color: var(--aa-white);
+}
+
+.brandName span {
+  color: var(--aa-gold-500);
+}
+
+.sideNav {
+  margin-top: 22px;
+  display: grid;
+  gap: var(--aa-space-2);
+}
+
+.sideLink {
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.15s ease;
+}
+
+.sideLinkActive {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  box-shadow: inset 3px 0 0 var(--aa-gold-500);
+}
+
+.sideLink:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dashboardMain {
+  padding: 22px;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--aa-neutral-200);
+  box-shadow: var(--aa-shadow-sm);
+}
+
+.dashTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.dashTop h3 {
+  margin-bottom: 6px;
+}
+
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--aa-space-3);
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--aa-space-4);
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.chartBox,
+.activityBox {
+  padding: 18px;
+  border-radius: 22px;
+  background: var(--aa-white);
+  border: 1px solid var(--aa-neutral-200);
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--aa-space-3);
+  align-items: center;
+}
+
+.chartHeader h4 {
+  margin: 0;
+}
+
+.activityBox h4 {
+  margin-bottom: 10px;
+}
+
+.lineChart {
+  height: 220px;
+  margin-top: 14px;
+  border-radius: var(--aa-radius-lg);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--aa-neutral-50), white 50%);
+  border: 1px solid var(--aa-neutral-100);
+}
+
+.lineChart svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .dashboardShell,
+  .splitGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .dashboardMain,
+  .sidebar {
+    padding: 18px;
+  }
+
+  .kpiGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashTop {
+    flex-direction: column;
+    align-items: start;
+  }
+}

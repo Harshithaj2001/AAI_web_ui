@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--aa-space-3);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--aa-neutral-200);
+  align-items: center;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item p {
+  margin: 2px 0 0;
+  font-size: 14px;
+}

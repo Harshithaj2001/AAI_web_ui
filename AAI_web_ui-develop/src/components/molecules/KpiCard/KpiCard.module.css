@@ -1,0 +1,32 @@
+.kpi {
+  padding: 18px;
+  border-radius: 20px;
+  background: var(--aa-white);
+  border: 1px solid var(--aa-neutral-200);
+}
+
+.label {
+  color: var(--aa-neutral-500);
+  font-size: var(--aa-fs-sm);
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: var(--aa-fs-xl);
+  font-weight: 800;
+  color: var(--aa-blue-900);
+  margin-bottom: var(--aa-space-2);
+}
+
+.trend {
+  font-size: var(--aa-fs-sm);
+  font-weight: 700;
+}
+
+.up {
+  color: var(--aa-success);
+}
+
+.down {
+  color: var(--aa-warning);
+}

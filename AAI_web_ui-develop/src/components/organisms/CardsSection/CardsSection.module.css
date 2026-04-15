@@ -1,0 +1,16 @@
+.cardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.spacer {
+  height: 20px;
+}
+
+.alertStack {
+  display: grid;
+  gap: 14px;
+}

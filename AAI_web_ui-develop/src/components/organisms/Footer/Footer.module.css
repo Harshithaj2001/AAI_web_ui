@@ -1,0 +1,22 @@
+.footer {
+  padding: 38px 0 60px;
+  color: var(--aa-neutral-500);
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--aa-space-4);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerTitle {
+  margin-bottom: 6px;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--aa-space-3);
+}

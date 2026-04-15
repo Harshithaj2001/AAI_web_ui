@@ -1,0 +1,9 @@
+export { Navbar } from './Navbar';
+export { HeroSection } from './HeroSection';
+export { ButtonsSection } from './ButtonsSection';
+export { CardsSection } from './CardsSection';
+export { FormsSection } from './FormsSection';
+export { TablesSection } from './TablesSection';
+export { DashboardSection } from './DashboardSection';
+export { ModalSection } from './ModalSection';
+export { Footer } from './Footer';
